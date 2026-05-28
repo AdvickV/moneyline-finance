@@ -47,9 +47,10 @@ export default function Page() {
   ]
 
   return (
-    <main className="bg-[#F5F8FC] text-[#162033] min-h-screen font-sans overflow-x-hidden">
+    <main className="bg-[#030712] text-[#162033] min-h-screen font-sans overflow-x-hidden">
+      <div className="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.18),transparent_25%),radial-gradient(circle_at_bottom_left,rgba(59,130,246,0.18),transparent_25%)]"></div>
       {/* NAVBAR */}
-      <nav className="sticky top-0 z-50 backdrop-blur-xl bg-[#071B34]/80 border-b border-white/10">
+      <nav className="sticky top-0 z-50 backdrop-blur-2xl bg-black/30 border-b border-white/10 shadow-2xl">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold text-white tracking-wide">
@@ -91,7 +92,7 @@ export default function Page() {
       {/* HERO */}
       <section
         id="home"
-        className="relative bg-gradient-to-br from-[#071B34] via-[#10294D] to-[#071B34] text-white py-28 px-6"
+        className="relative min-h-[92vh] flex items-center bg-gradient-to-br from-[#020617] via-[#071B34] to-[#020617] text-white py-28 px-6 overflow-hidden"
       >
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_right,#0FAE7B,transparent_35%)]" />
 
@@ -172,7 +173,7 @@ export default function Page() {
               Our Services
             </p>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-[#071B34]">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#5EE9B5]">
               Vehicle Finance Solutions
             </h2>
           </div>
@@ -203,7 +204,7 @@ export default function Page() {
                       : '/services/car-finance-coimbatore.webp'
                   }
                   alt={service.title}
-                  className="w-full h-52 object-cover"
+                  className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-700"
                 />
 
                 <div className="p-8">
@@ -247,12 +248,6 @@ export default function Page() {
                 key={item}
                 className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-8"
               >
-                <img
-                  src="/why/finance-icon.webp"
-                  alt={item}
-                  className="w-16 h-16 object-cover rounded-2xl mb-5"
-                />
-
                 <h3 className="text-xl font-semibold">{item}</h3>
               </div>
             ))}
