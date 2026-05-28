@@ -92,11 +92,11 @@ export default function Page() {
       {/* HERO */}
       <section
         id="home"
-        className="relative min-h-[92vh] flex items-center bg-gradient-to-br from-[#020617] via-[#071B34] to-[#020617] text-white py-28 px-6 overflow-hidden"
+        className="relative min-h-[92vh] flex items-center bg-gradient-to-br from-[#020617] via-[#071B34] to-[#020617] text-white py-20 md:py-28 px-5 md:px-6 overflow-hidden"
       >
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_right,#0FAE7B,transparent_35%)]" />
 
-        <div className="max-w-7xl mx-auto relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl mx-auto relative z-10 grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
           <div>
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-lg border border-white/20 rounded-full px-5 py-2 mb-8">
               <span className="h-2 w-2 bg-emerald-400 rounded-full animate-pulse"></span>
@@ -106,7 +106,7 @@ export default function Page() {
               </span>
             </div>
 
-            <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-6">
               Lowest Interest{' '}
               <span className="text-emerald-400">Car Loans</span> in
               Coimbatore
@@ -135,9 +135,9 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[32px] p-8 shadow-2xl">
+          <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[32px] p-6 md:p-8 shadow-2xl">
             <div className="space-y-6">
-              <div className="bg-white/10 rounded-3xl p-6">
+              <div className="bg-white/10 rounded-3xl p-5 flex flex-col items-center justify-center min-h-[140px]">
                 <p className="text-white/70 text-sm mb-2">
                   Used Car Loan Coimbatore
                 </p>
@@ -147,14 +147,14 @@ export default function Page() {
                 </h3>
               </div>
 
-              <div className="grid grid-cols-2 gap-5">
-                <div className="bg-white/10 rounded-3xl p-6">
+              <div className="grid grid-cols-2 gap-4 text-center">
+                <div className="bg-white/10 rounded-3xl p-5 flex flex-col items-center justify-center min-h-[140px]">
                   <p className="text-sm text-white/70">Approval Time</p>
 
                   <h3 className="text-2xl font-bold mt-2">3 Hours</h3>
                 </div>
 
-                <div className="bg-white/10 rounded-3xl p-6">
+                <div className="bg-white/10 rounded-3xl p-5 flex flex-col items-center justify-center min-h-[140px]">
                   <p className="text-sm text-white/70">Documentation</p>
 
                   <h3 className="text-2xl font-bold mt-2">Minimal</h3>
@@ -166,9 +166,9 @@ export default function Page() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="py-24 px-6">
+      <section id="services" className="py-16 md:py-24 px-5 md:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <p className="text-emerald-600 font-semibold mb-4 uppercase tracking-wider">
               Our Services
             </p>
@@ -191,7 +191,7 @@ export default function Page() {
                     ? '/two-wheeler-loan-coimbatore'
                     : '/car-finance-coimbatore'
                 }
-                className="bg-white rounded-[28px] overflow-hidden shadow-lg hover:-translate-y-2 transition duration-300 block"
+                className="bg-white/5 backdrop-blur-2xl border border-white/10 rounded-[28px] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.35)] hover:border-emerald-400/30 hover:-translate-y-2 transition-all duration-300 block"
               >
                 <img
                   src={
@@ -207,12 +207,12 @@ export default function Page() {
                   className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-700"
                 />
 
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-4 text-[#071B34]">
+                <div className="p-6 md:p-8">
+                  <h3 className="text-2xl font-bold mb-4 text-white">
                     {service.title}
                   </h3>
 
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-white/70 leading-relaxed">
                     {service.description}
                   </p>
                 </div>
@@ -223,7 +223,7 @@ export default function Page() {
       </section>
 
       {/* WHY CHOOSE */}
-      <section className="py-24 px-6 bg-[#071B34] text-white">
+      <section className="py-16 md:py-24 px-5 md:px-6 bg-[#071B34] text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-emerald-300 font-semibold mb-4 uppercase tracking-wider">
@@ -246,7 +246,7 @@ export default function Page() {
             ].map((item) => (
               <div
                 key={item}
-                className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-8"
+                className="bg-white/10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:p-8"
               >
                 <h3 className="text-xl font-semibold">{item}</h3>
               </div>
@@ -258,9 +258,9 @@ export default function Page() {
       {/* ABOUT */}
       <section
         id="about"
-        className="py-24 px-6 bg-[#071B34] text-white"
+        className="py-16 md:py-24 px-5 md:px-6 bg-[#071B34] text-white"
       >
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
           <div>
             <p className="text-emerald-300 font-semibold mb-4 uppercase tracking-wider">
               About Moneyline Finance
@@ -312,10 +312,10 @@ export default function Page() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="py-24 px-6">
+      <section id="contact" className="py-16 md:py-24 px-5 md:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="bg-gradient-to-br from-[#071B34] to-[#10294D] rounded-[40px] p-10 md:p-16 text-white shadow-2xl">
-            <div className="grid lg:grid-cols-2 gap-16">
+            <div className="grid lg:grid-cols-2 gap-10 md:gap-16">
               <div>
                 <p className="text-emerald-300 font-semibold uppercase tracking-wider mb-4">
                   Contact Us
