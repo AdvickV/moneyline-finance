@@ -42,8 +42,8 @@ export default function Page() {
             </h2>
 
             <p className="text-lg text-white/70 leading-relaxed mb-8">
-              Moneyline Finance provides used car finance,
-              commercial vehicle loans, and two wheeler finance
+              Moneyline Finance provides used car finance
+              and two wheeler finance
               across Coimbatore with transparent processing and
               competitive interest rates.
             </p>

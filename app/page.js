@@ -12,11 +12,6 @@ export default function Page() {
         'Fast approval used car finance solutions with competitive interest rates and minimal documentation.',
     },
     {
-      title: 'Commercial Car Loans',
-      description:
-        'Flexible business vehicle finance for taxis, travel operators, and commercial use.',
-    },
-    {
       title: 'Two Wheeler Loans',
       description:
         'Affordable bike and scooter loans with quick processing and easy eligibility.',
@@ -113,8 +108,8 @@ export default function Page() {
             </h1>
 
             <p className="text-lg text-white/80 leading-relaxed max-w-xl mb-10">
-              Moneyline Finance provides low interest used car loans, two
-              wheeler finance, and commercial vehicle loans in Coimbatore with
+              Moneyline Finance provides low interest used car loans and two
+              wheeler finance in Coimbatore with
               minimal documentation and hassle-free processing.
             </p>
 
@@ -142,9 +137,9 @@ export default function Page() {
                   Used Car Loan Coimbatore
                 </p>
 
-                <h3 className="text-3xl font-bold text-emerald-300">
+                <h4 className="text-3xl font-bold text-emerald-300">
                   Lowest Interest Rates
-                </h3>
+                </h4>
               </div>
 
               <div className="grid grid-cols-2 gap-4 text-center">
@@ -178,15 +173,13 @@ export default function Page() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {services.map((service) => (
               <a
                 key={service.title}
                 href={
                   service.title.includes('Used')
                     ? '/used-car-loan-coimbatore'
-                    : service.title.includes('Commercial')
-                    ? '/commercial-car-loan-coimbatore'
                     : service.title.includes('Two')
                     ? '/two-wheeler-loan-coimbatore'
                     : '/car-finance-coimbatore'
@@ -197,8 +190,6 @@ export default function Page() {
                   src={
                     service.title.includes('Used')
                       ? '/services/used-car-loan-coimbatore.webp'
-                      : service.title.includes('Commercial')
-                      ? '/services/commercial-car-loan-coimbatore.webp'
                       : service.title.includes('Two')
                       ? '/services/two-wheeler-loan-coimbatore.webp'
                       : '/services/car-finance-coimbatore.webp'
@@ -271,8 +262,7 @@ export default function Page() {
             </h2>
 
             <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Moneyline Finance provides used car loans, commercial
-              vehicle finance, and two wheeler loans with instant approvals and
+              Moneyline Finance provides used car loans and two wheeler loans with instant approvals and
               transparent processing.
             </p>
 

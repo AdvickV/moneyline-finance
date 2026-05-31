@@ -18,14 +18,13 @@ export const metadata = {
   },
 
   description:
-    'Lowest interest car loans in Coimbatore with instant 3-hour approval. Used car loans, commercial vehicle finance, and bike loans.',
+    'Lowest interest car loans in Coimbatore with instant 3-hour approval. Used car loans and bike loans.',
 
   keywords: [
     'car loan coimbatore',
     'used car loan coimbatore',
     'car finance coimbatore',
     'two wheeler loan coimbatore',
-    'commercial car loan coimbatore',
     'best car loan in coimbatore',
     'instant car loan approval coimbatore',
     'low interest car loan coimbatore',
@@ -50,7 +49,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Moneyline Finance',
     description:
-      'Used Car Loans, Two Wheeler Loans & Commercial Vehicle Finance in Coimbatore.',
+      'Used Car Loans, Two Wheeler Loans & Car Finance in Coimbatore.',
   },
 
   robots: {
