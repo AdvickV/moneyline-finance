@@ -132,7 +132,7 @@ export default function Page() {
 
           <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[32px] p-6 md:p-8 shadow-2xl">
             <div className="space-y-6">
-              <div className="bg-white/10 rounded-3xl p-5 flex flex-col items-center justify-center min-h-[140px]">
+              <div className="bg-white/10 rounded-3xl p-5 flex flex-col items-start md:items-center justify-center min-h-[140px]">
                 <p className="text-white/70 text-sm mb-2">
                   Used Car Loan Coimbatore
                 </p>
